@@ -1,3 +1,4 @@
+document.getElementById('navBar').style.display = 'none';
 // eslint-disable-next-line no-unused-vars
 function hamFunction() {
   if (document.getElementById('navBar').style.display === 'none') {
