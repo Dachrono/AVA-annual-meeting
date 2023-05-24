@@ -34,6 +34,10 @@ ul {
   margin-bottom: 5px;
 }
 
+.campaign {
+  display: none;
+}
+
 .navBar {
   top: 0.1px;
   padding: 120px 0.1px 0.1px 0.1px;
@@ -62,7 +66,7 @@ ul {
 
 .logo1 img {
   width: 110px;
-  margin: 6px 0.1px 6px 123px;
+  margin: 6px 0.1px 5px 123px;
 }
 
 /* introduction style */
@@ -187,8 +191,15 @@ ul {
   color: #838383;
 }
 
-.pastEvent img {
+.pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pics img {
   width: 334px;
+  height: 182px;
 }
 
 .item {
@@ -266,4 +277,158 @@ ul {
 .message img {
   width: 192px;
   height: 176px;
+}
+
+@media screen and (min-width: 768px) {
+  /* header style */
+
+  header {
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 30px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 0 0;
+    gap: 20px;
+  }
+
+  #face {
+    width: 10px;
+  }
+
+  #twi {
+    width: 18px;
+  }
+
+  ul {
+    margin-right: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  /* navigation style */
+
+  .menuNav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .campaign {
+    all: initial;
+    border: 5px solid #ec4327;
+    width: 123px;
+    height: 48px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ec4327;
+  }
+
+  .navBar {
+    all: initial;
+    display: flex;
+    gap: 55px;
+  }
+
+  .navBar a {
+    all: initial;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo1 img {
+    margin: 0.1px;
+  }
+
+  /* intro style */
+
+  .intro {
+    all: initial;
+    width: 100%;
+  }
+
+  .title {
+    padding-top: 92px;
+    height: auto;
+    margin: 0.1px 0.1px 3px 0.1px;
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+
+  #introDesc {
+    background: #f8f8f8;
+    border: 8.49673px solid #fff;
+    padding-right: 30%;
+    padding-left: 30%;
+    font-size: 25px;
+  }
+
+  .time {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+
+  /* logo style */
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo h2 {
+    padding-top: 65px;
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  .logo p {
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  /* past style */
+
+  .pics {
+    flex-direction: row;
+  }
+
+  .pics img {
+    width: 430px;
+    height: 236px;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  /* message style */
+
+  .message {
+    height: 250px;
+    background-color: #2e2e2e;
+  }
+
+  .message h3 {
+    color: #fff;
+  }
+
+  .message img {
+    background-color: #fff;
+  }
 }
