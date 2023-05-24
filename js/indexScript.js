@@ -39,7 +39,7 @@ const cardsInfo = [
 
 const cardsContainer = document.querySelector('.team');
 const title = document.createElement('h2');
-title.textContent = 'Team Members'
+title.textContent = 'Team Members';
 cardsContainer.appendChild(title);
 const bar = document.createElement('div');
 bar.classList.add('line2');
