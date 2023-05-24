@@ -1,3 +1,27 @@
+document.getElementById('about').style.display = 'block';
+
+function ajustar() {
+  if (window.innerWidth < 768) {
+    document.getElementById('navBar').style.display = 'none';
+  } else {
+    document.getElementById('navBar').style.display = '';
+  }
+}
+
+window.addEventListener('load', () => {
+  ajustar();
+});
+
+window.addEventListener('resize', () => {
+  ajustar();
+});
+
+const pagAct = window.location.pathname;
+
+if (pagAct === '/about.html') {
+  document.getElementById('about').style.display = 'none';
+}
+
 document.getElementById('navBar').style.display = 'none';
 // eslint-disable-next-line no-unused-vars
 function hamFunction() {
@@ -35,6 +59,10 @@ pictures.appendChild(bar);
 const desc = document.createElement('p');
 desc.textContent = 'Take a second to look at the photos of our last two talks';
 pictures.appendChild(desc);
+const cont = document.createElement('div');
+cont.classList.add('pics');
+pictures.appendChild(cont);
+const pics = document.querySelector('.pics');
 
 function hola(index) {
   const cont = document.createElement('div');
@@ -51,5 +79,5 @@ function hola(index) {
 
 for (let i = 0; i < events.length; i += 1) {
   const event = hola(i);
-  pictures.appendChild(event);
+  pics.appendChild(event);
 }
