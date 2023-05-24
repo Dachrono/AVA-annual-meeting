@@ -24,20 +24,21 @@
         </ul>
     </header>
 
-    <div class="navBar">
-        <nav>
-            <a href="" class="about"></a>
-            <a href="" class="program"></a>
-            <a href="" class="join"></a>
-            <a href="" class="sponsor"></a>
-            <a href="" class="news"></a>
+    <div class="menuNav">
+        <nav id="navBar" class="navBar" style="display: none;">     
+            <a href="about.html" class="about">About</a>
+            <a href="" class="program">Program</a>
+            <a href="" class="join">Join</a>
+            <a href="" class="sponsor">Sponsor</a>
+            <a href="" class="news">News</a>
         </nav>
 
-        <div class="menu">
-            <button onclick="hamFunction"><img src="pics/icon/navicon.png" alt="IconHam"></button>
+        <div id="menu" class="menu">
+            <button onclick="hamFunction()"><img  id="barClose" src="pics/icon/navicon.png" alt="IconHam"></button>
         </div>
 
-        <div class="logo"><img src="pics/logo.png" alt="Logo">
+        <div class="logo">
+            <a href="index.html"><img src="pics/logo.png" alt="Logo"></a>
         </div>
     </div>
 
