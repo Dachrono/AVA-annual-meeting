@@ -1,0 +1,337 @@
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0.1px;
+  padding: 0.1px;
+}
+
+/* header style */
+
+header {
+  padding: 5px;
+  background-color: gray;
+  display: none;
+}
+
+ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  list-style: none;
+}
+
+/* navigation bar style */
+
+.navBar {
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 4px #00000040;
+  margin-bottom: 5px;
+}
+
+.menu {
+  margin: 17px 0.1px 18px 23px;
+}
+
+.menu button {
+  all: initial;
+}
+
+.logo img {
+  width: 130px;
+  margin: 6px 0.1px 6px 123px;
+}
+
+/* introduction style */
+
+.title {
+  height: 350px;
+  padding: 32px 23.6px 0.1px 23.6px;
+  background-image: url(/pics/introBack1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title h3 {
+  margin: 0.1px 0.1px 9.9px 0.1px;
+  color: #ec5242;
+  font-weight: 400;
+  font-size: 33px;
+  margin-bottom: 0.3em;
+}
+
+.title h1 {
+  margin: 0.1px 30px 0.1px 0.1px;
+  color: #ec5242;
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 30px;
+  line-height: 1em;
+}
+
+.intro p {
+  margin: 17px 14px 16px 14px;
+  border: 4px;
+  padding: 16px;
+  font-weight: 400;
+  font-size: large;
+  line-height: 2em;
+  color: #868686;
+}
+
+.time {
+  background-image: url(/pics/introBack2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0.1px 30px 70px 30px;
+}
+
+.time h3 {
+  margin: 0.1px;
+  font-weight: 900;
+  font-size: 30px;
+  color: #595959;
+}
+
+.time p {
+  margin: 0.1px;
+  padding: 0.1px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #868686;
+}
+
+/* program style */
+
+.cards {
+  background-image: url(/pics/progBack.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards h2 {
+  color: #d3d3d3;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+
+.line {
+  width: 100%;
+  background-color: #ec5242;
+  height: 4px;
+  max-width: 64px;
+}
+
+.card {
+  margin: 32px 0.1px 40px 0.1px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  grid-area: 1/1/ span 1/ span 1;
+}
+
+.card2 {
+  grid-area: 2/1/ span 1/ span 1;
+}
+
+.card3 {
+  grid-area: 3/1/ span 1/ span 1;
+}
+
+.card4 {
+  grid-area: 4/1/ span 1/ span 1;
+}
+
+.card5 {
+  grid-area: 5/1/ span 1/ span 1;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  margin: 0.1px 10px 5px 10px;
+  background-color: #3b3e45ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+}
+
+.card h5 {
+  margin: 0.1px 0.1px 0.1px 5px;
+  color: #ec5242;
+  font-weight: 700;
+  font-size: 20px;
+  width: 30%;
+}
+
+.card img {
+  width: 85px;
+}
+
+.card p {
+  color: #f9f9f9;
+  font-weight: 400;
+  line-height: 20px;
+  width: 50%;
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.cards button {
+  all: initial;
+  margin: 0.1px 38px 30px 38px;
+  padding: 20px 50px 20px 50px;
+  background-color: #ff4f38;
+  color: #fff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* team style */
+
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.line2 {
+  width: 100%;
+  background-color: #a04038;
+  height: 4px;
+  max-width: 64px;
+}
+
+.teamCard1,
+.teamCard2,
+.teamCard3,
+.teamCard4,
+.teamCard5,
+.teamCard6 {
+  width: 90%;
+  background-image: url(/pics/TeamBack.jpg);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  margin: 0 13px 5px 13px;
+  padding: 12.8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.team img {
+  background-color: #4e4e4e;
+  border: 2px solid black;
+  width: 140px;
+  height: 150px;
+}
+
+.team h3 {
+  color: #272a31;
+  font-size: 23px;
+  margin-bottom: 0.2em;
+}
+
+.team h4 {
+  color: #ec5242;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+
+.lineCard {
+  background-color: #d3d3d3;
+  height: 1.5px;
+  margin: 3px;
+  max-width: 32px;
+}
+
+.team p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 16px;
+}
+
+/* Partner Style */
+
+.partner {
+  width: 100%;
+  background-color: #414246;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner h2 {
+  margin: 30px;
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+.partner img {
+  width: 160px;
+  padding: 15px;
+}
+
+/* footer style */
+
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.message h3 {
+  font-weight: 400;
+  font-size: large;
+  line-height: 32px;
+  color: #3b3b3b;
+}
+
+.message img {
+  width: 192px;
+  height: 176px;
+}
