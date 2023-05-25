@@ -33,10 +33,6 @@ ul {
   margin-bottom: 5px;
 }
 
-.campaign {
-  display: none;
-}
-
 .navBar {
   top: 0.1px;
   padding: 120px 0.1px 0.1px 0.1px;
@@ -65,7 +61,7 @@ ul {
 
 .logo1 img {
   width: 110px;
-  margin: 6px 0.1px 5px 123px;
+  margin: 6px 0.1px 6px 123px;
 }
 
 /* introduction style */
@@ -188,15 +184,8 @@ ul {
   color: #838383;
 }
 
-.pics {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.pics img {
+.pastEvent img {
   width: 334px;
-  height: 182px;
 }
 
 .item {

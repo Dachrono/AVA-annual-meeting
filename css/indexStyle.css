@@ -4,9 +4,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0.1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* header style */
@@ -30,15 +27,10 @@ ul {
 /* navigation bar style */
 
 .menuNav {
-  width: 100%;
   display: flex;
   align-items: center;
   box-shadow: 4px 4px 4px #00000040;
   margin-bottom: 5px;
-}
-
-.campaign {
-  display: none;
 }
 
 .navBar {
@@ -73,10 +65,6 @@ ul {
 }
 
 /* introduction style */
-
-.intro {
-  width: 100%;
-}
 
 .title {
   height: 350px;
@@ -349,7 +337,6 @@ ul {
 /* footer style */
 
 .message {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
