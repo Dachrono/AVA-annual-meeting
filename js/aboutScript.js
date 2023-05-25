@@ -59,6 +59,10 @@ pictures.appendChild(bar);
 const desc = document.createElement('p');
 desc.textContent = 'Take a second to look at the photos of our last two talks';
 pictures.appendChild(desc);
+const cont = document.createElement('div');
+cont.classList.add('pics');
+pictures.appendChild(cont);
+const pics = document.querySelector('.pics');
 
 function hola(index) {
   const cont = document.createElement('div');
@@ -75,5 +79,5 @@ function hola(index) {
 
 for (let i = 0; i < events.length; i += 1) {
   const event = hola(i);
-  pictures.appendChild(event);
+  pics.appendChild(event);
 }
