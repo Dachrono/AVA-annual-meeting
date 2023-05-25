@@ -1,3 +1,17 @@
+document.getElementById('navBar').style.display = 'none';
+// eslint-disable-next-line no-unused-vars
+function hamFunction() {
+  if (document.getElementById('navBar').style.display === 'none') {
+    document.getElementById('navBar').style.display = 'block';
+    document.getElementById('menu').style.position = 'fixed';
+    document.getElementById('barClose').src = 'pics/icon/xicon.png';
+  } else {
+    document.getElementById('navBar').style.display = 'none';
+    document.getElementById('barClose').src = 'pics/icon/navicon.png';
+    document.getElementById('menu').style.position = '';
+  }
+}
+
 const events = [
   {
     imag: 'pics/platica1.jpg',
