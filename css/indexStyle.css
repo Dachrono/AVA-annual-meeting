@@ -88,8 +88,8 @@ li a {
 }
 
 .title {
-  height: 350px;
-  padding: 32px 23.6px 0.1px 23.6px;
+  height: 190px;
+  padding: 150px 23.6px 0.1px 23.6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,6 +110,11 @@ li a {
   font-size: 45px;
   margin-bottom: 30px;
   line-height: 1em;
+}
+
+#introDesc {
+  background-color: #f6f6f6;
+  border: 8.5px solid #fff;
 }
 
 .intro p {
