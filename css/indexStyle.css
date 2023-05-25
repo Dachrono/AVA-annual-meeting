@@ -81,15 +81,15 @@ li a {
 
 .intro {
   width: 100%;
+  background-image: url('../pics/introBack1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title {
   height: 350px;
   padding: 32px 23.6px 0.1px 23.6px;
-  background-image: url('../pics/introBack1.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,11 +458,6 @@ li a {
 
   /* intro style */
 
-  .intro {
-    all: initial;
-    width: 100%;
-  }
-
   .title {
     padding-top: 92px;
     height: auto;
@@ -473,7 +468,7 @@ li a {
 
   #introDesc {
     width: 50%;
-    background: #f8f8f8;
+    background-color: #f6f6f6;
     border: 8.5px solid #fff;
     margin-right: 32%;
     margin-left: 15%;

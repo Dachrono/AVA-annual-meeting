@@ -24,6 +24,11 @@ ul {
   list-style: none;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* navigation bar style */
 
 .menuNav {
@@ -71,13 +76,17 @@ ul {
 
 /* introduction style */
 
+.intro {
+  width: 100%;
+  background-image: url('../pics/introBack1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .title {
   height: 350px;
   padding: 0.1px 0.1px 0.1px 0.1px;
-  background-image: url('../pics/introBack1.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,6 +109,10 @@ ul {
   line-height: 1em;
 }
 
+#introDesc {
+  background-color: #fff;
+}
+
 .intro p {
   margin: 24px 10px 0.1px 24px;
   border: 4px;
@@ -112,7 +125,6 @@ ul {
 }
 
 .contact {
-  background-color: #f7f7f8;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 49px 44px 30px 44px;
@@ -362,11 +374,6 @@ ul {
 
   /* intro style */
 
-  .intro {
-    all: initial;
-    width: 100%;
-  }
-
   .title {
     padding-top: 92px;
     height: auto;
@@ -377,7 +384,7 @@ ul {
 
   #introDesc {
     width: 40%;
-    background: #f8f8f8;
+    background-color: #fff;
     border: 8.5px solid #fff;
     margin-right: 30%;
     margin-left: 29%;
