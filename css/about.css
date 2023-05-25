@@ -27,9 +27,10 @@ ul {
 /* navigation bar style */
 
 .menuNav {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 4px 4px 4px #00000040;
   margin-bottom: 5px;
 }
 
@@ -56,6 +57,7 @@ ul {
 }
 
 .menu {
+  top: 1px;
   margin: 17px 0.1px 18px 23px;
 }
 
@@ -64,14 +66,13 @@ ul {
 }
 
 .logo1 img {
-  width: 110px;
-  margin: 6px 0.1px 5px 123px;
+  display: none;
 }
 
 /* introduction style */
 
 .title {
-  height: 150px;
+  height: 350px;
   padding: 0.1px 0.1px 0.1px 0.1px;
   background-image: url('../pics/introBack1.png');
   background-repeat: no-repeat;
@@ -84,7 +85,7 @@ ul {
 }
 
 .title h3 {
-  margin: 0.1px 12px 12px 12px;
+  margin: 150px 12px 12px 12px;
   color: #ec5242;
   font-weight: 400;
   font-size: 33px;
@@ -339,11 +340,8 @@ ul {
   .navBar {
     all: initial;
     display: flex;
-    gap: 55px;
-  }
-
-  .navBar a {
-    all: initial;
+    justify-content: center;
+    gap: 45px;
   }
 
   .menu {
@@ -351,7 +349,9 @@ ul {
   }
 
   .logo1 img {
-    margin: 0.1px;
+    display: block;
+    width: 110px;
+    margin: 6px 0.1px 5px 100px;
   }
 
   /* intro style */
@@ -370,16 +370,18 @@ ul {
   }
 
   #introDesc {
+    width: 40%;
     background: #f8f8f8;
-    border: 8.49673px solid #fff;
-    padding-right: 30%;
-    padding-left: 30%;
+    border: 8.5px solid #fff;
+    margin-right: 30%;
+    margin-left: 29%;
     font-size: 25px;
   }
 
   .time {
-    padding-right: 30%;
-    padding-left: 30%;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 29%;
   }
 
   /* logo style */
@@ -407,7 +409,7 @@ ul {
 
   .pics img {
     flex-wrap: wrap;
-    width: 430px;
+    width: 390px;
     height: 236px;
   }
 
