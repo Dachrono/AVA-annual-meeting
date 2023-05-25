@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone] <a name="about-project"></a>
+# 📖 [Veterinary international meet] <a name="about-project"></a>
 
-**Capstone project** This projects it is for finalize the module 1
+**Veterinary international meet** is it a web page to contact and explain to vets about the anual meet to know about at alternative food for the pet, we try to catch up more vet doctor to share the advances in this alternative area.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,13 +79,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon...
+- https://dachrono.github.io/capstone/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-This project was created for the final activity to can pass at the next module 
+This project HTML/CSS & JavaScript capstone project, was created for the final activity to can pass at the next module 
 
 ### Prerequisites
 
@@ -128,13 +128,6 @@ Visual studio code
 
 ## 👥 Authors <a name="authors"></a>
 
-🌟👤🌟 *Cindy Shin in Behance (Desing author)*
-<br><br>
-the design author is Cindy Shin in Behance and you can fins her works [here]( https://www.behance.net/adagio07) and [here]( https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) is the original design.
-As you can see I made some changes to the design such as images, backgrounds and content of the page but it doesn’t mean that is my design. I give all the design credit to the real design author.
-
-/////////////////////////////////////////////////////////////////////////<br>
-
 Andres Zamorano Medina
 
 👤 **Author1**
@@ -173,7 +166,10 @@ If you like this project please feel fre to send me corrections for make it bett
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank at every people on Microverse that made this possible.
+🌟👤🌟 *Cindy Shin in Behance (Desing author)*
+<br><br>
+the design author is Cindy Shin in Behance and you can fins her works [here]( https://www.behance.net/adagio07) and [here]( https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) is the original design.
+As you can see I made some changes to the design such as images, backgrounds and content of the page but it doesn’t mean that is my design. I give all the design credit to the real design author.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
