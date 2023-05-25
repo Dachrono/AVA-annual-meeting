@@ -414,6 +414,8 @@ li a {
   /* navigation style */
 
   .menuNav {
+    position: static;
+    box-shadow: 4px 4px 4px #00000040;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -438,6 +440,10 @@ li a {
     display: flex;
     justify-content: center;
     gap: 45px;
+  }
+
+  .navBar a {
+    padding: 3px 0 5px 0px;
   }
 
   .menu {
