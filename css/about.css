@@ -1,4 +1,3 @@
-html,
 body {
   font-family: 'Lato', sans-serif;
   height: 100%;
@@ -25,13 +24,23 @@ ul {
   list-style: none;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* navigation bar style */
 
 .menuNav {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 4px 4px 4px #00000040;
   margin-bottom: 5px;
+}
+
+.campaign {
+  display: none;
 }
 
 .navBar {
@@ -53,6 +62,7 @@ ul {
 }
 
 .menu {
+  top: 1px;
   margin: 17px 0.1px 18px 23px;
 }
 
@@ -61,19 +71,22 @@ ul {
 }
 
 .logo1 img {
-  width: 110px;
-  margin: 6px 0.1px 6px 123px;
+  display: none;
 }
 
 /* introduction style */
 
-.title {
-  height: 150px;
-  padding: 0.1px 0.1px 0.1px 0.1px;
-  background-image: url(/pics/introBack1.png);
-  background-repeat: no-repeat;
+.intro {
+  width: 100%;
+  background-image: url('../pics/introBack1.png');
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+.title {
+  height: 350px;
+  padding: 0.1px 0.1px 0.1px 0.1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +94,7 @@ ul {
 }
 
 .title h3 {
-  margin: 0.1px 12px 12px 12px;
+  margin: 150px 12px 12px 12px;
   color: #ec5242;
   font-weight: 400;
   font-size: 33px;
@@ -96,6 +109,10 @@ ul {
   line-height: 1em;
 }
 
+#introDesc {
+  background-color: #fff;
+}
+
 .intro p {
   margin: 24px 10px 0.1px 24px;
   border: 4px;
@@ -108,7 +125,6 @@ ul {
 }
 
 .contact {
-  background-color: #f7f7f8;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 49px 44px 30px 44px;
@@ -139,7 +155,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #fafafa;
 }
 
 .logo h2 {
@@ -172,7 +187,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #fafafa;
 }
 
 .pastEvent h2 {
@@ -187,8 +201,15 @@ ul {
   color: #838383;
 }
 
-.pastEvent img {
+.pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pics img {
   width: 334px;
+  height: 182px;
 }
 
 .item {
@@ -266,4 +287,161 @@ ul {
 .message img {
   width: 192px;
   height: 176px;
+}
+
+@media screen and (min-width: 768px) {
+  /* header style */
+
+  header {
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 30px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 0 0;
+    gap: 20px;
+  }
+
+  #face {
+    width: 10px;
+  }
+
+  #twi {
+    width: 18px;
+  }
+
+  ul {
+    margin-right: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  /* navigation style */
+
+  .menuNav {
+    position: static;
+    box-shadow: 4px 4px 4px #00000040;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .campaign {
+    all: initial;
+    border: 5px solid #ec4327;
+    width: 123px;
+    height: 48px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ec4327;
+  }
+
+  .navBar {
+    all: initial;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+  }
+
+  .navBar a {
+    padding: 3px 0 5px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo1 img {
+    display: block;
+    width: 110px;
+    margin: 6px 0.1px 5px 100px;
+  }
+
+  /* intro style */
+
+  .title {
+    padding-top: 92px;
+    height: auto;
+    margin: 0.1px 0.1px 3px 0.1px;
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+
+  #introDesc {
+    width: 40%;
+    background-color: #fff;
+    border: 8.5px solid #fff;
+    margin-right: 30%;
+    margin-left: 29%;
+    font-size: 25px;
+  }
+
+  .time {
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 29%;
+  }
+
+  /* logo style */
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo h2 {
+    padding-top: 65px;
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  .logo p {
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  /* past style */
+
+  .pics {
+    flex-direction: row;
+  }
+
+  .pics img {
+    flex-wrap: wrap;
+    width: 390px;
+    height: 236px;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  /* message style */
+
+  .message {
+    height: 250px;
+    background-color: #2e2e2e;
+  }
+
+  .message h3 {
+    color: #fff;
+  }
+
+  .message img {
+    background-color: #fff;
+  }
 }

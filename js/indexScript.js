@@ -1,4 +1,27 @@
-document.getElementById('navBar').style.display = 'none';
+document.getElementById('about').style.display = 'block';
+
+function ajustar() {
+  if (window.innerWidth < 768) {
+    document.getElementById('navBar').style.display = 'none';
+  } else {
+    document.getElementById('navBar').style.display = '';
+  }
+}
+
+window.addEventListener('load', () => {
+  ajustar();
+});
+
+window.addEventListener('resize', () => {
+  ajustar();
+});
+
+const pagAct = window.location.pathname;
+
+if (pagAct === '/index.html') {
+  document.getElementById('home').style.display = 'none';
+}
+
 // eslint-disable-next-line no-unused-vars
 function hamFunction() {
   if (document.getElementById('navBar').style.display === 'none') {
@@ -54,6 +77,7 @@ const cardsInfo = [
 const cardsContainer = document.querySelector('.team');
 const title = document.createElement('h2');
 title.textContent = 'Team Members';
+title.classList.add('teamMem');
 cardsContainer.appendChild(title);
 const bar = document.createElement('div');
 bar.classList.add('line2');

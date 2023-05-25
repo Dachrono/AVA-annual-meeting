@@ -1,10 +1,12 @@
-html,
 body {
   font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
-  margin: 0.1px;
+  margin: 0;
   padding: 0.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* header style */
@@ -25,13 +27,23 @@ ul {
   list-style: none;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* navigation bar style */
 
 .menuNav {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 4px 4px 4px #00000040;
   margin-bottom: 5px;
+}
+
+.campaign {
+  display: none;
 }
 
 .navBar {
@@ -40,7 +52,7 @@ ul {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: lightgrey;
+  background-color: #d3d3d3;
   font-size: 37px;
 }
 
@@ -53,6 +65,7 @@ ul {
 }
 
 .menu {
+  top: 1px;
   margin: 17px 0.1px 18px 23px;
 }
 
@@ -61,19 +74,22 @@ ul {
 }
 
 .logo img {
-  width: 110px;
-  margin: 6px 0.1px 5px 123px;
+  display: none;
 }
 
 /* introduction style */
 
-.title {
-  height: 350px;
-  padding: 32px 23.6px 0.1px 23.6px;
-  background-image: url(/pics/introBack1.png);
-  background-repeat: no-repeat;
+.intro {
+  width: 100%;
+  background-image: url('../pics/introBack1.png');
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+.title {
+  height: 190px;
+  padding: 150px 23.6px 0.1px 23.6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +112,11 @@ ul {
   line-height: 1em;
 }
 
+#introDesc {
+  background-color: #f6f6f6;
+  border: 8.5px solid #fff;
+}
+
 .intro p {
   margin: 17px 14px 16px 14px;
   border: 4px;
@@ -107,7 +128,7 @@ ul {
 }
 
 .time {
-  background-image: url(/pics/introBack2.png);
+  background-image: url('../pics/introBack2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 0.1px 30px 70px 30px;
@@ -132,7 +153,8 @@ ul {
 /* program style */
 
 .cards {
-  background-image: url(/pics/progBack.jpg);
+  width: 100%;
+  background-image: url('../pics/progBack.jpg');
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,7 +281,7 @@ ul {
 .teamCard5,
 .teamCard6 {
   width: 90%;
-  background-image: url(/pics/TeamBack.jpg);
+  background-image: url('../pics/TeamBack.jpg');
   background-size: 50px;
   background-repeat: no-repeat;
   margin: 0 13px 5px 13px;
@@ -337,6 +359,7 @@ ul {
 /* footer style */
 
 .message {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -353,4 +376,223 @@ ul {
 .message img {
   width: 192px;
   height: 176px;
+}
+
+@media screen and (min-width: 768px) {
+  /* header style */
+
+  header {
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 30px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 0 0;
+    gap: 20px;
+  }
+
+  #face {
+    width: 10px;
+  }
+
+  #twi {
+    width: 18px;
+  }
+
+  ul {
+    margin-right: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  /* navigation style */
+
+  .menuNav {
+    position: static;
+    box-shadow: 4px 4px 4px #00000040;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .campaign {
+    all: initial;
+    border: 5px solid #ec4327;
+    width: 123px;
+    height: 48px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ec4327;
+  }
+
+  .navBar {
+    all: initial;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+  }
+
+  .navBar a {
+    padding: 3px 0 5px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo img {
+    display: block;
+    width: 110px;
+    margin: 6px 0.1px 5px 100px;
+  }
+
+  /* intro style */
+
+  .title {
+    padding-top: 92px;
+    height: auto;
+    margin: 0.1px 0.1px 3px 0.1px;
+    padding-right: 32%;
+    padding-left: 17%;
+  }
+
+  #introDesc {
+    width: 50%;
+    background-color: #f6f6f6;
+    border: 8.5px solid #fff;
+    margin-right: 32%;
+    margin-left: 15%;
+    font-size: 25px;
+  }
+
+  .time {
+    padding-right: 32%;
+    padding-left: 17%;
+  }
+
+  /* card style */
+
+  .card {
+    margin: 32px 0.1px 40px 0.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    margin: 0.1px 3px 5px 3px;
+    width: 20%;
+    height: 220px;
+    background-color: #3b3e45ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card1:hover,
+  .card2:hover,
+  .card3:hover,
+  .card4:hover,
+  .card5:hover {
+    border: 3px solid #fff;
+  }
+
+  .card h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 0.1px;
+  }
+
+  .card img {
+    width: 100%;
+    width: 55px;
+  }
+
+  .card p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0.1px;
+  }
+
+  .cards button {
+    all: initial;
+    margin: 70px 0.1px 75px 0.1px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    text-decoration-line: underline;
+  }
+
+  /* team style */
+
+  .team {
+    all: initial;
+    width: 70%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .team section {
+    max-width: 400px;
+  }
+
+  .teamMem {
+    display: flex;
+    justify-content: center;
+    grid-area: 1/1/ span 1/ span 2;
+  }
+
+  .line2 {
+    margin-bottom: 50px;
+    grid-area: 2/1/ span 1/ span 2;
+  }
+
+  .teamCard1 {
+    justify-items: center;
+    grid-area: 3/1/ span 1/ span 1;
+  }
+
+  .teamCard2 {
+    grid-area: 3/2/ span 1/ span 1;
+  }
+
+  .teamCard3 {
+    grid-area: 4/1/ span 1/ span 1;
+  }
+
+  .teamCard4 {
+    grid-area: 4/2/ span 1/ span 1;
+  }
+
+  .teamCard5 {
+    grid-area: 5/1/ span 1/ span 1;
+  }
+
+  .teamCard6 {
+    grid-area: 5/2/ span 1/ span 1;
+  }
 }
