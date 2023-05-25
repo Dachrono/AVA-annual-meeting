@@ -1,3 +1,4 @@
+html,
 body {
   font-family: 'Lato', sans-serif;
   height: 100%;
@@ -69,7 +70,7 @@ ul {
 .title {
   height: 150px;
   padding: 0.1px 0.1px 0.1px 0.1px;
-  background-image: url('../pics/introBack1.png');
+  background-image: url(/pics/introBack1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -138,6 +139,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid #fafafa;
 }
 
 .logo h2 {
@@ -170,6 +172,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #fafafa;
 }
 
 .pastEvent h2 {
@@ -395,7 +398,6 @@ ul {
   }
 
   .pics img {
-    flex-wrap: wrap;
     width: 430px;
     height: 236px;
   }
