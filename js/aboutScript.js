@@ -8,9 +8,7 @@ function ajustar() {
   }
 }
 
-window.addEventListener('load', () => {
-  ajustar();
-});
+ajustar();
 
 window.addEventListener('resize', () => {
   ajustar();

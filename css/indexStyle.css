@@ -3,7 +3,7 @@ body {
   font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
-  margin: 0.1px;
+  margin: 0;
   padding: 0.1px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@ ul {
 .title {
   height: 350px;
   padding: 32px 23.6px 0.1px 23.6px;
-  background-image: url(/pics/introBack1.png);
+  background-image: url('../pics/introBack1.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -119,7 +119,7 @@ ul {
 }
 
 .time {
-  background-image: url(/pics/introBack2.png);
+  background-image: url('../pics/introBack2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 0.1px 30px 70px 30px;
@@ -145,7 +145,7 @@ ul {
 
 .cards {
   width: 100%;
-  background-image: url(/pics/progBack.jpg);
+  background-image: url('../pics/progBack.jpg');
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,7 +272,7 @@ ul {
 .teamCard5,
 .teamCard6 {
   width: 90%;
-  background-image: url(/pics/TeamBack.jpg);
+  background-image: url('../pics/TeamBack.jpg');
   background-size: 50px;
   background-repeat: no-repeat;
   margin: 0 13px 5px 13px;
@@ -543,7 +543,6 @@ ul {
     all: initial;
     width: 70%;
     display: grid;
-    grid-template-rows: 50% 50%;
     justify-items: center;
   }
 
